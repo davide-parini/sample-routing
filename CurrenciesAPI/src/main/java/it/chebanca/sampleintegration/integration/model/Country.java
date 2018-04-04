@@ -1,4 +1,4 @@
-package it.chebanca.sampleintegration.integration;
+package it.chebanca.sampleintegration.integration.model;
 
 import java.util.List;
 

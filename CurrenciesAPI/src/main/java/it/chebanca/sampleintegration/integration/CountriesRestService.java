@@ -10,6 +10,7 @@ import org.springframework.web.client.RestTemplate;
 import it.chebanca.sampleintegration.common.TechnicalException;
 import it.chebanca.sampleintegration.common.model.CountryBO;
 import it.chebanca.sampleintegration.integration.mapper.CountryMapper;
+import it.chebanca.sampleintegration.integration.model.Country;
 
 public class CountriesRestService {
 

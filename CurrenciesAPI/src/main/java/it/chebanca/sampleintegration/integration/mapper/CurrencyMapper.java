@@ -6,7 +6,7 @@ import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
 import it.chebanca.sampleintegration.common.model.CurrencyBO;
-import it.chebanca.sampleintegration.integration.Currency;
+import it.chebanca.sampleintegration.integration.model.Currency;
 
 @Mapper
 public interface CurrencyMapper {
