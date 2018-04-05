@@ -21,11 +21,11 @@ public class CurrenciesWebController {
 	@Autowired
 	private CountriesRestService service;
 
-	@GetMapping
+	@GetMapping("/countries")
 	public String countries(Model model) throws TechnicalException {
 		LOG.debug("countries()");
 		model.addAttribute("countries", CountryApiMapper.INSTANCE.toApiObject(service.getCountries()));
-		return "countries";
+		return "countries/list";
 	}
 
 }
