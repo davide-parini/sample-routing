@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="CurrenciesAPI_WebApp-1.0.0">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <dependent-module archiveName="CurrenciesAPI_Common-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/CurrenciesAPI_Common/CurrenciesAPI_Common">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="CurrenciesAPI_Integration-1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/CurrenciesAPI_Integration/CurrenciesAPI_Integration">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="CurrenciesAPI_WebApp"/>
+        <property name="java-output-path" value="/CurrenciesAPI_WebApp/target/classes"/>
+    </wb-module>
+</project-modules>

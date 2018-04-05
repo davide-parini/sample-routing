@@ -1,8 +1,5 @@
 package it.chebanca.sampleintegration.common.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
-@JsonIgnoreProperties(ignoreUnknown = true)
 public class CurrencyBO {
 
 	private String code;

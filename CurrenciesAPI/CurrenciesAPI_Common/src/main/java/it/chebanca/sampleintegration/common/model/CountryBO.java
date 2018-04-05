@@ -2,9 +2,6 @@ package it.chebanca.sampleintegration.common.model;
 
 import java.util.List;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
-@JsonIgnoreProperties(ignoreUnknown = true)
 public class CountryBO {
 
 	private String name;
