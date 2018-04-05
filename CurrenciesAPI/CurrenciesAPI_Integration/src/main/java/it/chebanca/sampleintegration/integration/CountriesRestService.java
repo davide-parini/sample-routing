@@ -44,7 +44,7 @@ public class CountriesRestService {
 			// La prima pagina nelle liste sarebbe la 0, non la 1.
 			page = page - 1;
 			if (page < 0 || pageSize < 0)
-				throw new TechnicalException("Range richiesto non valido!");
+				throw new TechnicalException("Invalid range!");
 			if ((pageSize * page) > countriesList.size())
 				countriesList.clear();
 			else if ((pageSize * (page + 1)) > countriesList.size())
