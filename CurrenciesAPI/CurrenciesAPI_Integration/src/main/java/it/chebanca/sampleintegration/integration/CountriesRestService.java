@@ -1,6 +1,7 @@
 package it.chebanca.sampleintegration.integration;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
@@ -46,7 +47,7 @@ public class CountriesRestService {
 			if (page < 0 || pageSize < 0)
 				throw new TechnicalException("Invalid range!");
 			if ((pageSize * page) > countriesList.size())
-				countriesList.clear();
+				countriesList = Collections.emptyList();
 			else if ((pageSize * (page + 1)) > countriesList.size())
 				countriesList = countriesList.subList(pageSize * page, countriesList.size());
 			else
