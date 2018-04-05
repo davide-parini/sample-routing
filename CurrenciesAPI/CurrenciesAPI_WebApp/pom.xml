@@ -14,10 +14,6 @@
 	<name>CurrenciesAPI_WebApp</name>
 	<packaging>war</packaging>
 
-	<properties>
-		<org.mapstruct.version>1.2.0.Final</org.mapstruct.version>
-	</properties>
-
 	<dependencies>
 		<dependency>
 			<groupId>it.chebanca.sampleintegration</groupId>

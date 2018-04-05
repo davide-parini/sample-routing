@@ -13,10 +13,6 @@
 	<artifactId>CurrenciesAPI_Integration</artifactId>
 	<name>CurrenciesAPI_Integration</name>
 
-	<properties>
-		<org.mapstruct.version>1.2.0.Final</org.mapstruct.version>
-	</properties>
-
 	<dependencies>
 		<dependency>
 			<groupId>it.chebanca.sampleintegration</groupId>
