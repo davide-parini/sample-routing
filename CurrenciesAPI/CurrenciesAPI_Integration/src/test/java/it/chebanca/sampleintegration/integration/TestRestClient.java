@@ -22,7 +22,6 @@ public class TestRestClient {
 	public void testIntegration() throws TechnicalException {
 		CountriesRestService service = new CountriesRestService();
 		List<CountryBO> countries = service.getCountries();
-		LOG.info(countries);
 		assertNotNull(countries);
 	}
 
@@ -30,7 +29,6 @@ public class TestRestClient {
 	public void testPaginazioneValida() throws TechnicalException {
 		CountriesRestService service = new CountriesRestService();
 		List<CountryBO> countries = service.getCountries(1, 5);
-		LOG.info(countries);
 		assertNotNull(countries);
 		assertEquals(5, countries.size());
 	}
@@ -42,7 +40,6 @@ public class TestRestClient {
 			service.getCountries(0, 5);
 			fail("TechnicalException expected");
 		} catch (TechnicalException e) {
-			LOG.info(e);
 			assertTrue("Invalid range!".equals(e.getMessage()));
 		}
 	}
