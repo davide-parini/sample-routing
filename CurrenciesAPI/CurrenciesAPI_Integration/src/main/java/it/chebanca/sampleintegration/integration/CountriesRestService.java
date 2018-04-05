@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
 import it.chebanca.sampleintegration.common.TechnicalException;
@@ -12,6 +13,7 @@ import it.chebanca.sampleintegration.common.model.CountryBO;
 import it.chebanca.sampleintegration.integration.mapper.CountryMapper;
 import it.chebanca.sampleintegration.integration.model.Country;
 
+@Component
 public class CountriesRestService {
 
 	private static final Logger LOG = LogManager.getLogger(CountriesRestService.class.getName());
